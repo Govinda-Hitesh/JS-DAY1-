@@ -20,7 +20,7 @@ The  exact values are not assigned to the variables,instead of the default value
 where number = undefined, Ex() function Ex(n) { undefined = n*n ; ret; } newNumber = undefined.
 
 	var number = 8;
-       	function Ex(n)
+       	function ab(n)
 	{
     		console.log(n);
     		var a = n * n;
@@ -29,12 +29,12 @@ where number = undefined, Ex() function Ex(n) { undefined = n*n ; ret; } newNumb
     		// console.log(a);
 
 	}
-	var newNumber = Ex(5);  
+	var newNumber = ab(5);  
 
 Execution Phase : This is the phase where the exact values will be allocated to the variables. Undefined will be removed now.
 
 Ex: 
-	function Ex(n)
+	function ab(n)
 	{
 		var a = n*n;
 		return a;
@@ -44,7 +44,7 @@ Ex:
 (LIFO - Last in first out) 
 
 Ex:						Call Stack:
- 	var newNumber = Ex(5); //op-1 		op-3
+ 	var newNumber = ab(5); //op-1 		op-3
 						op-2
 	let a = 20;				op-1
 	let b = 40;
